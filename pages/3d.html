@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3D & Sculpted Cakes | Tasty Cakery</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="../index.html" class="logo-link">
+                <img src="../images/logo/tasty-cakery-logo.png"
+                     alt="Tasty Cakery Logo"
+                     class="logo">
+            </a>
+
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../index.html#cakes">Our Cakes</a>
+                <a href="../index.html#about">About Us</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+
+            <a href="../index.html#cakes" class="nav-button">
+                Explore Cakes
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- 3D CAKES PAGE INTRO -->
+        <section class="gallery-hero">
+
+            <div class="collection-heading">
+
+                <p class="collection-label">
+                    TASTY CAKERY COLLECTION
+                </p>
+
+                <h1>3D & Sculpted Cakes</h1>
+
+                <p class="collection-description">
+                    Creative cakes transformed into edible works of art.
+                    From characters and objects to completely unique ideas,
+                    each design is carefully sculpted and handcrafted
+                    for your celebration.
+                </p>
+
+                <div class="heading-decoration"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3D CAKE GALLERY -->
+        <div
+            class="gallery-grid"
+            id="firebase-cake-gallery"
+            data-category="3d"
+        >
+            <!-- 3D cakes uploaded through the admin dashboard appear here -->
+        </div>
+
+
+        <!-- IMAGE LIGHTBOX -->
+        <div id="lightbox"
+             class="lightbox"
+             onclick="closeLightbox(event)">
+
+            <span class="lightbox-close"
+                  onclick="closeLightbox()">
+                &times;
+            </span>
+
+            <img id="lightbox-image"
+                 class="lightbox-image"
+                 src=""
+                 alt="Cake preview">
+
+        </div>
+
+
+        <!-- CUSTOM ORDER -->
+        <section class="custom-order">
+
+            <p class="eyebrow">
+                MADE FOR YOU
+            </p>
+
+            <h2>
+                Have a unique cake idea?
+            </h2>
+
+            <p>
+                Send us your idea, inspiration or reference and we'll
+                work with you to create a one-of-a-kind sculpted cake
+                for your celebration.
+            </p>
+
+            <a href="../index.html#contact"
+               class="primary-button">
+                Get in Touch
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+    <script type="module" src="../js/birthday-gallery.js"></script>
+
+</body>
+
+</html>

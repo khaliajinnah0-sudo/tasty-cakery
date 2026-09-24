@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plain & Classic Cakes | Tasty Cakery</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="../index.html" class="logo-link">
+                <img src="../images/logo/tasty-cakery-logo.png"
+                     alt="Tasty Cakery Logo"
+                     class="logo">
+            </a>
+
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../index.html#cakes">Our Cakes</a>
+                <a href="../index.html#about">About Us</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+
+            <a href="../index.html#cakes" class="nav-button">
+                Explore Cakes
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- PLAIN & CLASSIC PAGE INTRO -->
+        <section class="gallery-hero">
+
+            <div class="collection-heading">
+
+                <p class="collection-label">
+                    TASTY CAKERY COLLECTION
+                </p>
+
+                <h1>Plain & Classic Cakes</h1>
+
+                <p class="collection-description">
+                    Simple, beautiful and delicious cakes made for every
+                    occasion. From timeless flavours to elegant finishes,
+                    our classic cakes prove that sometimes less is more.
+                </p>
+
+                <div class="heading-decoration"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PLAIN & CLASSIC CAKE GALLERY -->
+        <div
+            class="gallery-grid"
+            id="firebase-cake-gallery"
+            data-category="plain"
+        >
+            <!-- Plain cakes uploaded through the admin dashboard appear here -->
+        </div>
+
+
+        <!-- IMAGE LIGHTBOX -->
+        <div id="lightbox"
+             class="lightbox"
+             onclick="closeLightbox(event)">
+
+            <span class="lightbox-close"
+                  onclick="closeLightbox()">
+                &times;
+            </span>
+
+            <img id="lightbox-image"
+                 class="lightbox-image"
+                 src=""
+                 alt="Cake preview">
+
+        </div>
+
+
+        <!-- CUSTOM ORDER -->
+        <section class="custom-order">
+
+            <p class="eyebrow">
+                MADE FOR YOU
+            </p>
+
+            <h2>
+                Looking for something simple and delicious?
+            </h2>
+
+            <p>
+                Tell us the flavour, size and style you have in mind
+                and we'll prepare a beautiful classic cake made
+                especially for you.
+            </p>
+
+            <a href="../index.html#contact"
+               class="primary-button">
+                Get in Touch
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+    <script type="module" src="../js/birthday-gallery.js"></script>
+
+</body>
+
+</html>

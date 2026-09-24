@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wedding Cakes | Tasty Cakery</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="../index.html" class="logo-link">
+                <img src="../images/logo/tasty-cakery-logo.png"
+                     alt="Tasty Cakery Logo"
+                     class="logo">
+            </a>
+
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../index.html#cakes">Our Cakes</a>
+                <a href="../index.html#about">About Us</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+
+            <a href="../index.html#cakes" class="nav-button">
+                Explore Cakes
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- WEDDING PAGE INTRO -->
+        <section class="gallery-hero">
+
+            <div class="collection-heading">
+
+                <p class="collection-label">
+                    TASTY CAKERY COLLECTION
+                </p>
+
+                <h1>Wedding Cakes</h1>
+
+                <p class="collection-description">
+                    Elegant cakes created for unforgettable celebrations.
+                    From timeless classics to beautifully personalised designs,
+                    every wedding cake is handcrafted for your special day.
+                </p>
+
+                <div class="heading-decoration"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WEDDING CAKE GALLERY -->
+        <div
+            class="gallery-grid"
+            id="firebase-cake-gallery"
+            data-category="wedding"
+        >
+            <!-- Wedding cakes uploaded through the admin dashboard appear here -->
+        </div>
+
+
+        <!-- IMAGE LIGHTBOX -->
+        <div id="lightbox"
+             class="lightbox"
+             onclick="closeLightbox(event)">
+
+            <span class="lightbox-close"
+                  onclick="closeLightbox()">
+                &times;
+            </span>
+
+            <img id="lightbox-image"
+                 class="lightbox-image"
+                 src=""
+                 alt="Cake preview">
+
+        </div>
+
+
+        <!-- CUSTOM ORDER -->
+        <section class="custom-order">
+
+            <p class="eyebrow">
+                MADE FOR YOU
+            </p>
+
+            <h2>
+                Planning your perfect wedding cake?
+            </h2>
+
+            <p>
+                Share your wedding theme, colours and inspiration
+                with us and we'll create a cake designed especially
+                for your celebration.
+            </p>
+
+            <a href="../index.html#contact"
+               class="primary-button">
+                Get in Touch
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+    <script type="module" src="../js/birthday-gallery.js"></script>
+
+</body>
+
+</html>

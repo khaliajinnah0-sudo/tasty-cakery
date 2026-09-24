@@ -1,0 +1,1634 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #fffdf9;
+    color: #2d2926;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    height: 105px;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #f0ece4;
+}
+
+
+.logo img {
+    width: 145px;
+    display: block;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 38px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #3b3733;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+    color: #e7a516;
+}
+
+
+.nav-button {
+    text-decoration: none;
+
+    background-color: #f2ad19;
+    color: white;
+
+    padding: 13px 23px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.nav-button:hover {
+    background-color: #d99300;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: calc(100vh - 105px);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 70px 7%;
+
+    background-color: #fffaf1;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.hero-small-text {
+    color: #d7950b;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 2.5px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(48px, 5vw, 76px);
+    line-height: 1.05;
+
+    font-weight: 600;
+
+    color: #292521;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+    color: #e7a516;
+}
+
+
+.hero-description {
+    max-width: 560px;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: #706961;
+
+    margin-bottom: 35px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+
+    text-decoration: none;
+
+    padding: 15px 27px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.primary-button {
+    background-color: #f2ad19;
+    color: #ffffff;
+}
+
+
+.primary-button:hover {
+    background-color: #d99300;
+}
+
+
+.secondary-button {
+    color: #3a342e;
+
+    border: 1px solid #cfc5b7;
+
+    background-color: transparent;
+}
+
+
+.secondary-button:hover {
+    border-color: #e7a516;
+    color: #d7950b;
+}
+
+
+/* TEMPORARY CAKE IMAGE AREA */
+
+/* HERO CAKE IMAGE */
+
+.hero-image {
+    height: 650px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        padding: 50px 6%;
+    }
+
+    .hero-image {
+    height: 430px;
+}
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+}
+/* =========================
+   OUR CAKES SECTION
+========================= */
+
+.cakes-section {
+    padding: 110px 7%;
+    background: #ffffff;
+}
+
+.cakes-heading {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.section-label {
+    color: #d88a00;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.cakes-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    line-height: 1.05;
+    font-weight: 400;
+    color: #211e1a;
+    margin: 0 0 22px;
+}
+
+.cakes-heading h2 span {
+    color: #efa400;
+}
+
+.section-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6f675f;
+    max-width: 620px;
+}
+
+.cake-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px 35px;
+}
+
+.cake-category {
+    width: 100%;
+}
+
+.category-image {
+    width: 100%;
+    height: 430px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.placeholder-image {
+    background: #f4ead7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b68a46;
+    font-size: 17px;
+}
+
+.category-info {
+    padding: 22px 5px 0;
+}
+
+.category-info h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #211e1a;
+    margin: 0 0 10px;
+}
+
+.category-info p {
+    color: #766e65;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.category-info a {
+    color: #d88a00;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.category-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .cakes-section {
+        padding: 75px 6%;
+    }
+
+    .cakes-heading h2 {
+        font-size: 43px;
+    }
+
+    .cake-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .category-image {
+        height: 380px;
+    }
+}
+
+/* =========================
+   OUR CAKES SECTION
+========================= */
+
+.cakes-section {
+    padding: 110px 7%;
+    background-color: #ffffff;
+}
+
+.cakes-heading {
+    max-width: 720px;
+    margin-bottom: 60px;
+}
+
+.section-label {
+    color: #d88a00;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.cakes-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    line-height: 1.05;
+    font-weight: 400;
+    color: #211e1a;
+    margin: 0 0 22px;
+}
+
+.cakes-heading h2 span {
+    color: #efa400;
+}
+
+.section-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6f675f;
+    max-width: 620px;
+}
+
+
+/* CATEGORY GRID */
+
+.cake-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px 35px;
+}
+
+.cake-category {
+    width: 100%;
+}
+
+
+/* CATEGORY IMAGE */
+
+.category-image {
+    width: 100%;
+    height: 430px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.placeholder-image {
+    background-color: #f7eddb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b9893e;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+
+/* CATEGORY TEXT */
+
+.category-info {
+    padding: 22px 5px 0;
+}
+
+.category-info h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #211e1a;
+    margin: 0 0 10px;
+}
+
+.category-info p {
+    color: #766e65;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 14px;
+}
+
+.category-info a {
+    color: #d88a00;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.category-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .cakes-section {
+        padding: 75px 6%;
+    }
+
+    .cakes-heading h2 {
+        font-size: 43px;
+    }
+
+    .cake-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .category-image {
+        height: 380px;
+    }
+}
+/* Birthday cake image */
+/* Cake category images */
+.category-image {
+    width: 100%;
+    height: 540px;
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+/* Cake category cards - portrait photo layout */
+
+.cake-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 40px;
+}
+
+.category-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    border-radius: 28px;
+    overflow: hidden;
+    background-color: #f7ead2;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+/* =========================
+   BIRTHDAY PAGE FIXES
+========================= */
+
+/* Keep navbar logo at the correct size */
+.navbar .logo {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+/* Make sure navbar stays properly aligned */
+.navbar .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* =========================================
+   BIRTHDAY CAKES PAGE
+========================================= */
+
+.collection-page {
+    background: #fffaf2;
+}
+
+/* Page introduction */
+.collection-hero {
+    text-align: center;
+    padding: 90px 8% 60px;
+}
+
+.collection-label {
+    color: #d88900;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.collection-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 64px;
+    font-weight: 500;
+    margin: 0 0 20px;
+    color: #211d19;
+}
+
+.collection-hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6c6258;
+}
+
+/* Birthday cake gallery */
+.cake-gallery {
+    width: 86%;
+    max-width: 1300px;
+    margin: 20px auto 100px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.gallery-item {
+    height: 420px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #f7ead1;
+}
+
+.gallery-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #b97818;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.gallery-item {
+    height: 430px;
+    border-radius: 28px;
+    overflow: hidden;
+    background: #f3ead9;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Bottom custom-order section */
+.custom-order {
+    background: #f7ead1;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.custom-order .collection-label {
+    margin-bottom: 12px;
+}
+
+.custom-order h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 46px;
+    font-weight: 500;
+    color: #211d19;
+    margin: 0 0 18px;
+}
+
+.custom-order p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #6c6258;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Fix links on inner pages */
+.navbar nav a {
+    color: #211d19;
+    text-decoration: none;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection-hero h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cake-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-hero {
+        padding: 60px 6% 40px;
+    }
+
+    .collection-hero h1 {
+        font-size: 40px;
+    }
+}
+
+/* =========================================
+   BIRTHDAY PAGE - RESPONSIVE GALLERY
+========================================= */
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection-hero h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-hero {
+        padding: 60px 6% 40px;
+    }
+
+    .collection-hero h1 {
+        font-size: 40px;
+    }
+}
+/* =========================================
+   BIRTHDAY COLLECTION HEADING
+========================================= */
+
+.collection-heading {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 75px 30px 55px;
+}
+
+.collection-label {
+    color: #d98b00;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.collection-heading h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.05;
+    color: #211d18;
+    margin: 0 0 22px;
+}
+
+.collection-description {
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6b6258;
+}
+
+.heading-decoration {
+    width: 45px;
+    height: 2px;
+    background: #e9a10b;
+    margin: 30px auto 0;
+}
+@media (max-width: 600px) {
+
+    .collection-heading {
+        padding: 55px 20px 40px;
+    }
+
+    .collection-heading h1 {
+        font-size: 43px;
+    }
+
+    .collection-description {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .collection-label {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+}
+/* =========================================
+   NAVBAR FIX - ALL PAGES
+========================================= */
+
+.navbar {
+    background: #ffffff;
+    width: 100%;
+    border-bottom: 1px solid #eee8df;
+}
+
+.nav-container {
+    max-width: 1450px;
+    height: 110px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    width: 150px;
+    height: 95px;
+    object-fit: contain;
+    display: block;
+}
+
+.nav-container nav {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-left: auto;
+    margin-right: 45px;
+}
+
+.nav-container nav a {
+    text-decoration: none;
+    color: #211d18;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-container nav a:hover {
+    color: #e9a10b;
+}
+
+.nav-container .btn {
+    flex-shrink: 0;
+}
+
+/* =========================================
+   BIRTHDAY CAKE GALLERY IMAGES
+========================================= */
+
+.gallery-item {
+    width: 100%;
+    height: 500px;
+    border-radius: 28px;
+    overflow: hidden;
+    background: #f5ead7;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.035);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .gallery-item {
+        height: 450px;
+    }
+
+}
+/* ========================================
+   CAKE GALLERY LIGHTBOX
+======================================== */
+
+.gallery-item img {
+    cursor: pointer;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.88);
+
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-image {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.lightbox-close:hover {
+    opacity: 0.7;
+}
+/* =========================================
+   ABOUT TASTY CAKERY
+========================================= */
+
+.about-section {
+    padding: 120px 7%;
+    background: #fffaf2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 620px;
+}
+
+.about-content h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 58px;
+    line-height: 1.08;
+    font-weight: 400;
+    color: #211d18;
+    margin: 0 0 30px;
+}
+
+.about-content h2 span {
+    display: block;
+    color: #e7a516;
+}
+
+.about-text {
+    color: #70675e;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-content .primary-button {
+    margin-top: 15px;
+}
+
+
+/* ABOUT FEATURES */
+
+.about-feature {
+    border-top: 1px solid #e7ddce;
+}
+
+.about-stat {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 20px;
+
+    padding: 35px 0;
+    border-bottom: 1px solid #e7ddce;
+}
+
+.about-stat > span {
+    color: #dfa018;
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.about-stat h3 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: 400;
+    color: #211d18;
+    margin: 0 0 8px;
+}
+
+.about-stat p {
+    color: #756c63;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ABOUT MOBILE */
+
+@media (max-width: 850px) {
+
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        padding: 80px 6%;
+    }
+
+    .about-content h2 {
+        font-size: 44px;
+    }
+
+}
+/* =========================================
+   CONTACT / ORDER SECTION
+========================================= */
+
+.contact-section {
+    padding: 120px 7%;
+    background: #211d18;
+}
+
+.contact-heading {
+    max-width: 760px;
+    margin-bottom: 70px;
+}
+
+.contact-heading .section-label {
+    color: #e7a516;
+}
+
+.contact-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 64px;
+    line-height: 1.05;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 18px 0 25px;
+}
+
+.contact-heading h2 span {
+    color: #e7a516;
+}
+
+.contact-heading > p:last-child {
+    max-width: 650px;
+    color: #c7bfb5;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* CONTACT CARDS */
+
+.contact-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.contact-card {
+    min-height: 230px;
+    padding: 35px;
+
+    display: grid;
+    grid-template-columns: 55px 1fr auto;
+    gap: 20px;
+    align-items: center;
+
+    border: 1px solid #514a42;
+    border-radius: 24px;
+
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    background: #2c2721;
+    border-color: #e7a516;
+    transform: translateY(-4px);
+}
+
+.contact-number {
+    align-self: start;
+    color: #e7a516;
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+.contact-label {
+    color: #e7a516 !important;
+    font-size: 12px !important;
+    letter-spacing: 2px;
+    margin-bottom: 12px !important;
+}
+
+.contact-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 10px;
+}
+
+.contact-card p {
+    color: #c7bfb5;
+    font-size: 16px;
+    margin: 0;
+}
+
+.contact-arrow {
+    color: #e7a516;
+    font-size: 32px;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-arrow {
+    transform: translateX(6px);
+}
+
+
+/* CONTACT MOBILE */
+
+@media (max-width: 850px) {
+
+    .contact-section {
+        padding: 80px 6%;
+    }
+
+    .contact-heading h2 {
+        font-size: 46px;
+    }
+
+    .contact-options {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        min-height: 190px;
+        padding: 28px;
+    }
+
+}
+/* ========================================
+   ADMIN LOGIN
+======================================== */
+
+.admin-login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #f7f3ee;
+}
+
+.admin-login-card {
+    width: 100%;
+    max-width: 460px;
+    background: #ffffff;
+    padding: 55px 45px;
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.admin-login-card .section-label {
+    margin-bottom: 12px;
+}
+
+.admin-login-card h1 {
+    margin: 0 0 12px;
+    font-size: 42px;
+    line-height: 1.1;
+}
+
+.admin-login-intro {
+    margin-bottom: 35px;
+    color: #6d6d6d;
+    line-height: 1.6;
+}
+
+.admin-form-group {
+    margin-bottom: 22px;
+}
+
+.admin-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.admin-form-group input {
+    width: 100%;
+    padding: 15px 16px;
+    border: 1px solid #d8d2cc;
+    border-radius: 8px;
+    background: #ffffff;
+    font: inherit;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.admin-form-group input:focus {
+    border-color: #222222;
+}
+
+.admin-login-button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 16px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #1f1f1f;
+    color: #ffffff;
+
+    font: inherit;
+    font-weight: 600;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.admin-login-button:hover {
+    opacity: 0.88;
+}
+
+.admin-login-message {
+    min-height: 20px;
+    margin: 18px 0 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+
+    .admin-login-card {
+        padding: 40px 25px;
+    }
+
+    .admin-login-card h1 {
+        font-size: 34px;
+    }
+}
+/* ========================================
+   ADMIN DASHBOARD
+======================================== */
+
+.admin-dashboard {
+    min-height: 100vh;
+    background: #f7f3ee;
+    padding: 50px 6%;
+}
+
+.admin-dashboard-header {
+    max-width: 1200px;
+    margin: 0 auto 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 30px;
+}
+
+.admin-dashboard-header h1 {
+    margin: 5px 0 8px;
+    font-size: 44px;
+}
+
+.admin-dashboard-header > div > p:last-child {
+    margin: 0;
+    color: #6d6d6d;
+}
+
+.admin-logout-button {
+    padding: 12px 22px;
+
+    background: transparent;
+    border: 1px solid #1f1f1f;
+    border-radius: 8px;
+
+    font: inherit;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.admin-logout-button:hover {
+    background: #1f1f1f;
+    color: #ffffff;
+}
+
+
+.admin-dashboard-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+
+.admin-upload-card,
+.admin-gallery-manager {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 35px;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.06);
+}
+
+
+.admin-card-heading {
+    margin-bottom: 30px;
+}
+
+.admin-card-heading h2 {
+    margin: 5px 0 10px;
+    font-size: 28px;
+}
+
+.admin-card-heading > p:last-child {
+    margin: 0;
+    color: #6d6d6d;
+    line-height: 1.6;
+}
+
+
+.admin-form-group select {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    border: 1px solid #d8d2cc;
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    font: inherit;
+    font-size: 15px;
+
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.admin-form-group select:focus {
+    border-color: #222222;
+}
+
+
+.admin-form-group input[type="file"] {
+    padding: 12px;
+    cursor: pointer;
+}
+
+
+.admin-publish-button {
+    width: 100%;
+
+    margin-top: 8px;
+    padding: 16px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #1f1f1f;
+    color: #ffffff;
+
+    font: inherit;
+    font-weight: 600;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.admin-publish-button:hover {
+    opacity: 0.88;
+}
+
+
+.admin-upload-message {
+    min-height: 20px;
+    margin: 18px 0 0;
+
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.admin-cake-list {
+    min-height: 200px;
+}
+
+
+.admin-empty-message {
+    margin: 0;
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+    border: 1px dashed #d8d2cc;
+    border-radius: 12px;
+
+    color: #888888;
+}
+
+
+@media (max-width: 900px) {
+
+    .admin-dashboard-content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .admin-dashboard {
+        padding: 30px 20px;
+    }
+
+    .admin-dashboard-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .admin-dashboard-header h1 {
+        font-size: 36px;
+    }
+
+    .admin-upload-card,
+    .admin-gallery-manager {
+        padding: 25px;
+    }
+
+}
+/* ========================================
+   ADMIN CAKE LIST
+======================================== */
+
+.admin-cake-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.admin-cake-card {
+    overflow: hidden;
+    background: #f7f3ee;
+    border-radius: 12px;
+}
+
+.admin-cake-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.admin-cake-info {
+    padding: 18px;
+}
+
+.admin-cake-category {
+    margin: 0 0 6px;
+
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #8a7d73;
+}
+
+.admin-cake-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+@media (max-width: 600px) {
+
+    .admin-cake-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ========================================
+   ADMIN DELETE BUTTON
+======================================== */
+
+.admin-delete-button {
+    margin-top: 16px;
+    padding: 9px 15px;
+
+    background: transparent;
+    border: 1px solid #b8aea6;
+    border-radius: 6px;
+
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.admin-delete-button:hover {
+    background: #1f1f1f;
+    border-color: #1f1f1f;
+    color: #ffffff;
+}
+/* ========================================
+   FINAL MOBILE WEBSITE FIXES
+======================================== */
+
+@media (max-width: 600px) {
+
+    /* Prevent horizontal overflow */
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* OUR CAKES - one cake per row */
+    .cake-categories {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        width: 100%;
+    }
+
+    .cake-category {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .category-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+    }
+
+    .category-info {
+        width: 100%;
+        padding: 20px 0 0;
+    }
+
+
+    /* MOBILE NAVBAR */
+    .nav-container {
+        width: 100%;
+        height: 90px;
+        padding: 0 20px;
+    }
+
+    .navbar .logo {
+        width: 110px;
+        height: auto;
+    }
+
+    .nav-container nav {
+        display: none;
+    }
+
+
+    /* MOBILE HERO */
+    .hero {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 50px 6%;
+    }
+
+    .hero-content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 430px;
+    }
+
+
+    /* ABOUT */
+    .about-section {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 80px 6%;
+    }
+
+
+    /* CONTACT */
+    .contact-section {
+        width: 100%;
+        padding: 80px 6%;
+    }
+
+    .contact-options {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        width: 100%;
+        grid-template-columns: 40px 1fr auto;
+        padding: 25px 20px;
+    }
+}

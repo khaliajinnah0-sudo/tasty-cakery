@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Tasty Cakery</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <main class="admin-dashboard">
+
+        <header class="admin-dashboard-header">
+
+            <div>
+                <p class="section-label">TASTY CAKERY</p>
+                <h1>Cake Manager</h1>
+                <p>Manage the cakes displayed on your website.</p>
+            </div>
+
+            <button id="logout-button" class="admin-logout-button">
+                Log Out
+            </button>
+
+        </header>
+
+
+        <section class="admin-dashboard-content">
+
+            <div class="admin-upload-card">
+
+                <div class="admin-card-heading">
+                    <p class="section-label">ADD TO GALLERY</p>
+                    <h2>Add a New Cake</h2>
+                    <p>
+                        Upload a cake and choose where it should appear
+                        on the Tasty Cakery website.
+                    </p>
+                </div>
+
+
+                <form id="cake-upload-form">
+
+                    <div class="admin-form-group">
+
+                        <label for="cake-name">
+                            Cake Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cake-name"
+                            placeholder="e.g. Pink Butterfly Birthday Cake"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="admin-form-group">
+
+                        <label for="cake-category">
+                            Category
+                        </label>
+
+                        <select id="cake-category" required>
+
+                            <option value="">
+                                Select a category
+                            </option>
+
+                            <option value="birthday">
+                                Birthday Cakes
+                            </option>
+
+                            <option value="kids-character">
+                                Kids & Character Cakes
+                            </option>
+
+                            <option value="wedding">
+                                Wedding Cakes
+                            </option>
+
+                            <option value="plain">
+                                Plain Cakes
+                            </option>
+
+                            <option value="occasions">
+                                Occasions
+                            </option>
+
+                            <option value="3d">
+                                3D Cakes
+                            </option>
+
+                            <option value="cupcakes">
+                                Cupcakes & Treats
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="admin-form-group">
+
+                        <label for="cake-image">
+                            Cake Photo
+                        </label>
+
+                        <input
+                            type="file"
+                            id="cake-image"
+                            accept="image/*"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="admin-publish-button"
+                    >
+                        Publish Cake
+                    </button>
+
+                    <p
+                        id="upload-message"
+                        class="admin-upload-message"
+                    ></p>
+
+                </form>
+
+            </div>
+
+
+            <div class="admin-gallery-manager">
+
+                <div class="admin-card-heading">
+
+                    <p class="section-label">
+                        CURRENT GALLERY
+                    </p>
+
+                    <h2>Your Cakes</h2>
+
+                    <p>
+                        Cakes published through the admin dashboard
+                        will appear here.
+                    </p>
+
+                </div>
+
+                <div id="admin-cake-list" class="admin-cake-list">
+
+                    <p class="admin-empty-message">
+                        No cakes have been loaded yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+<script type="module" src="../js/admin-dashboard.js"></script>
+</body>
+
+</html>
