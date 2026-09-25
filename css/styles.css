@@ -1632,3 +1632,13 @@ body {
         padding: 25px 20px;
     }
 }
+/* ========================================
+   COLLECTION PAGE - EXPLORE MORE CAKES BUTTON
+======================================== */
+
+.custom-order .primary-button {
+    padding: 18px 34px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 32px;
+}
